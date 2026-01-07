@@ -88,3 +88,24 @@ h1 span {
 	font-size: 20px;
 	z-index: 100;
 }
+
+
+/* 📱 Mobile fix */
+@media (max-width: 768px) {
+  #app h1 {
+    --fontSize: 32px;
+    --lineHeight: 44px;
+    height: auto;              /* remove fixed height */
+    margin: 20vh auto 10px;    /* push it down but not too much */
+  }
+
+  #app h2 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+  }
+
+  #app h6 {
+    margin-top: 8px;
+    font-size: 0.9rem;
+  }
+}
